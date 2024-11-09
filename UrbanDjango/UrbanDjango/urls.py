@@ -17,10 +17,10 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
-from UrbanDjango.task2.views import welcome, WELL
+from task2.views import welcome, WELL
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', welcome),
-    path('/proba', WELL.as_view())
+    path('proba/', WELL.as_view())
 ]
