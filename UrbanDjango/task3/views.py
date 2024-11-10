@@ -41,11 +41,18 @@ def platform(request):
     text1 = 'На главную'
     text2 = 'Магазин'
     text3 = 'Корзина'
+    adr1 = '/platform'
+    adr2 = '/platform/games/'
+    adr3 = '/platform/cart/'
     context = {
         'title': title,
         'text0': text0,
         'text1': text1,
         'text2': text2,
         'text3': text3,
+        'adr1': adr1,
+        'adr2': adr2,
+        'adr3': adr3
     }
     return render(request, 'platform.html', context)
+
