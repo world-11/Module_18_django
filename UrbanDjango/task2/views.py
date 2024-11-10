@@ -8,3 +8,7 @@ def welcome(request):
 
 class WELL(TemplateView):
     template_name = 'class_template.html'
+
+
+
+
