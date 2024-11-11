@@ -18,7 +18,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from task2.views import welcome, WELL
-from task3.views import cart, platform, games
+#from task3.views import cart, platform, games
+from task4.views import cart, platform, games
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,3 +29,4 @@ urlpatterns = [
     path('platform/cart/', cart),
     path('platform/games/', games)
 ]
+
