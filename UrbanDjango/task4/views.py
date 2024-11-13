@@ -51,3 +51,4 @@ def platform(request):
         'adr3': adr3
     }
     return render(request, 'platform.html', context)
+

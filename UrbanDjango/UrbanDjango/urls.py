@@ -20,13 +20,16 @@ from django.urls import path
 from task2.views import welcome, WELL
 #from task3.views import cart, platform, games
 from task4.views import cart, platform, games
+from task5.views import sign_up_by_html, sign_up_by_django
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', welcome),
+    path('welcome', welcome),
     path('proba/', WELL.as_view()),
     path('platform/', platform),
     path('platform/cart/', cart),
-    path('platform/games/', games)
+    path('platform/games/', games),
+    path('', sign_up_by_html),
+    path('django_sign_up/', sign_up_by_django)
 ]
 
